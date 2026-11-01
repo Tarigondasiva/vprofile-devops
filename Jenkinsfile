@@ -20,12 +20,12 @@ pipeline {
 
         stage('Fetch Code') {
             steps {
-                git branch: 'paac', url: 'https://github.com/devopshydclub/vprofile-project.git'
+                git branch: 'main', url: 'https://github.com/Tarigondasiva/vprofile-devops.git'
             }
         }
         stage('BUILD'){
             steps {
-                sh 'mvn clean install -DskipTests'
+                sh 'mvn istall'
             }
            /* post {
                 success {
